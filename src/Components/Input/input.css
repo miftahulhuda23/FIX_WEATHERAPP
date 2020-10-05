@@ -1,0 +1,29 @@
+.container {
+  width: fit-content;
+  margin-top: 10px;
+}
+
+
+.input {
+  width: 450px;
+  height: 40px;
+  color: white;
+  background: transparent;
+  border-style: none;
+  /* border-bottom: 5px solid red; */
+  box-shadow: 0px 3px rgb(250, 246, 247);
+}
+
+.input:focus {
+  outline: none;
+  background: transparent;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.btn {
+  height: 45px;
+  margin-top: 0px;
+}
