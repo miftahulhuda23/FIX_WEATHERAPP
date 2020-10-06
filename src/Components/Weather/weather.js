@@ -118,13 +118,13 @@ const Weather = () => {
       <h3 className="description">{current.description}</h3>
       <i className={`wi ${icons()} display-4 icon`} />
       <br />
-      <h3>
-        <h1 className="city">in {current.kota}, </h1>
-      </h3>
+
+      <h1 className="city">in {current.kota}, </h1>
+
       <h2>{current.temperature}&deg;C</h2>
       <h4>
         min: {current.temp_min}&deg;C &nbsp; max: {current.temp_max}&deg;C
-        &nbsp; wind: {current.wind}km
+        &nbsp; wind: {current.wind}kn
       </h4>
     </div>
   );
@@ -140,7 +140,7 @@ const Weather = () => {
       <h1 className="temp">{data.temperature}&deg;C</h1>
       <h3>
         min: {data.temp_min}&deg;C &nbsp; &nbsp; max: {data.temp_max}&deg;C
-        &nbsp; &nbsp; wind: {data.wind}km
+        &nbsp; &nbsp; wind: {data.wind}kn
       </h3>
       <br />
     </div>
