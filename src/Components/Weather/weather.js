@@ -32,7 +32,7 @@ const Weather = () => {
           wind: response.data.wind.speed,
           temp_max: Math.floor(response.data.main.temp_max - 275.15),
           temp_min: Math.floor(response.data.main.temp_min - 275.15),
-          description: response.data.weather[0].description,
+          description: response.data.weather[0].main,
         });
         console.log(response.data);
         setLoading(false);
@@ -66,7 +66,7 @@ const Weather = () => {
             temp_max: Math.floor(response.data.main.temp_max - 275.15),
             temp_min: Math.floor(response.data.main.temp_min - 275.15),
             wind: response.data.wind.speed,
-            description: response.data.weather[0].description,
+            description: response.data.weather[0].main,
           });
           console.log(response.data);
         });
